@@ -2,22 +2,36 @@
 
 In this challenge, I was required to venture into the realm of state management by constructing a Redux-inspired store to manage the state of a simple Tally App. My primary goal is to manage the app's state changes efficiently, focusing on core functionalities like incrementing, decrementing, and resetting a counter. Instead of rendering changes on the UI, I had to use subscribe to state updates and log them to the console, highlighting the power of state management in applications.
 
-### How to run the code
+## File Structure
 
+-   model (Folder):
+
+    -   [actions.js](https://github.com/haleigh27/HALVAL360_FTO2401_GroupA1_Haleigh-Valentine_DJS05/blob/main/model/actions.js) - Contains the action creators for the the different action types.
+    -   [reducers.js](https://github.com/haleigh27/HALVAL360_FTO2401_GroupA1_Haleigh-Valentine_DJS05/blob/main/model/reducers.js) - Contains the reducer function which is called in the dispatch function to update the state.
+    -   [store.js](https://github.com/haleigh27/HALVAL360_FTO2401_GroupA1_Haleigh-Valentine_DJS05/blob/main/model/store.js) - Contains the subscribers and states arrays. As well as the getState, dispatch and subscribe functions.
+
+-   scripts.js - Contains code to log the state to the console based on the senarios in the user stories.
+-   index.html
+
+## Run the code
+
+-   Ensure that the "Live Server" extention is installed on VS Code.
 -   Run the code with live server and inspect the console to see the logged states.
 
-### A brief overview of your approach.
+## Overview of approach.
 
 -   I created the store by defining the actions I wanted to execute in actions.js in the model folder.
 -   I then wrote the reducer function using a switch statement in the function body.
 -   I wrote the code in store.js which defines the initial state as well as the getState(), dispatch() and subscribe() functions.
 -   Lastly I compiled the index.html and the scripts.js to call the functions with the necessary arguments.
 
-### Challenges faced and how I overcame them.
+## Challenges faced and how I overcame them.
 
 -   I initially had a difficult time understanding the concepts from the video expanation. Once I typed out the code for the to-do-app example I was able to go through it and see the big picture as well as what each individual function did and entailed. This finally allowed me to gain a good understanding of the concepts, allowing me to complete the assignment.
 
-## DJS05 Project Brief: Building a Redux-Inspired Store for a Tally App
+</br>
+
+## DJS05 Project Brief:
 
 ### Objective
 

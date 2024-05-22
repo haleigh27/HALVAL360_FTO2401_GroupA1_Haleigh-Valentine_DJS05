@@ -43,6 +43,8 @@ export const states = [
 ];
 
 /**
+ * Function which gets the latest (current) state
+ *
  * @return {State}
  */
 export const getState = () => {
@@ -50,6 +52,8 @@ export const getState = () => {
 };
 
 /**
+ * Dispatch function which updates the state and calls the functions in the subscribers array.
+ *
  * @param {Action} action
  */
 export const dispatch = (action) => {
@@ -61,7 +65,10 @@ export const dispatch = (action) => {
 };
 
 /**
- * @param {Subscription} subscription
+ * Subscribe function which accepts a callback function as a parameter. The callback function gets added to an the subscribers array (array of functions which are executed when the state changes).
+ *
+ * @param {Subscription} subscription - Callback function with two parameters for the previous and next state.
+ * @return {function(): void} - unsubscribe function which can be used to remove a function currently in the subscribers array
  */
 export const subscribe = (subscription) => {
     subscribers.push(subscription);

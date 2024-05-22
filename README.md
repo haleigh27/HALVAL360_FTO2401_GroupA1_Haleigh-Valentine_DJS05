@@ -10,7 +10,8 @@ In this challenge, I was required to venture into the realm of state management 
 
 -   I created the store by defining the actions I wanted to execute in actions.js in the model folder.
 -   I then wrote the reducer function using a switch statement in the function body.
--   Lastly, I wrote the code in store.js which defines the initial state as well as the getState(), dispatch() and subscribe() functions
+-   I wrote the code in store.js which defines the initial state as well as the getState(), dispatch() and subscribe() functions.
+-   Lastly I compiled the index.html and the scripts.js to call the functions with the necessary arguments.
 
 ### Challenges faced and how I overcame them.
 

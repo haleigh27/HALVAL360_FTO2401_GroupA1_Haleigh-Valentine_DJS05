@@ -52,7 +52,7 @@ export const getState = () => {
 };
 
 /**
- * Dispatch function which updates the state and calls the functions in the subscribers array.
+ * Dispatch function which updates the state. It calls the reducer function and then calls the functions in the subscribers array.
  *
  * @param {Action} action
  */
@@ -65,7 +65,7 @@ export const dispatch = (action) => {
 };
 
 /**
- * Subscribe function which accepts a callback function as a parameter. The callback function gets added to an the subscribers array (array of functions which are executed when the state changes).
+ * Subscribe function which accepts a callback function as a parameter. The callback function gets added to the subscribers array (array of functions which are executed when the state changes).
  *
  * @param {Subscription} subscription - Callback function with two parameters for the previous and next state.
  * @return {function(): void} - unsubscribe function which can be used to remove a function currently in the subscribers array

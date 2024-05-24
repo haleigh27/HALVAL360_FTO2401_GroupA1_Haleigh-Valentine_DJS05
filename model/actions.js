@@ -1,41 +1,41 @@
 /**
  * Increase count by one
  *
- * @typedef {object} ADD
+ * @typedef {object} Add
  * @prop {'ADD'} type
  */
 
 /**
- * @returns {ADD}
+ * @returns {Add}
  */
-export const ADD = () => ({ type: 'ADD' });
+export const add = () => ({ type: 'ADD' });
 
 /**
  * Decrease count by one
  *
- * @typedef {object} SUBTRACT
+ * @typedef {object} Subtract
  * @prop {'SUBTRACT'} type
  */
 
 /**
- * @returns {SUBTRACT}
+ * @returns {Subtract}
  */
-export const SUBTRACT = () => ({ type: 'SUBTRACT' });
+export const subtract = () => ({ type: 'SUBTRACT' });
 
 /**
  * Reset count to zero
  *
- * @typedef {object} RESET
+ * @typedef {object} Reset
  * @prop {'RESET'} type
  */
 
 /**
- * @returns {RESET}
+ * @returns {Reset}
  */
-export const RESET = () => ({ type: 'RESET' });
+export const reset = () => ({ type: 'RESET' });
 
 /**
- * @typedef {ADD | SUBTRACT | RESET } Action
+ * @typedef {Add | Subtract| Reset } Action
  */
 
 export const Action = {};
